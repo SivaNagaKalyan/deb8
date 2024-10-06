@@ -1,0 +1,19 @@
+<ActionBar title="Profile"></ActionBar>
+<StackLayout>
+  <Label [text]="user.name" class="h1"></Label>
+  <Label [text]="user.username" class="body"></Label>
+  <GridLayout columns="*, *, *" class="m-y-20">
+    <StackLayout col="0">
+      <Label [text]="user.debates" class="h2"></Label>
+      <Label text="Debates" class="body"></Label>
+    </StackLayout>
+    <StackLayout col="1">
+      <Label [text]="user.followers" class="h2"></Label>
+      <Label text="Followers" class="body"></Label>
+    </StackLayout>
+    <StackLayout col="2">
+      <Label [text]="user.following" class="h2"></Label>
+      <Label text="Following" class="body"></Label>
+    </StackLayout>
+  </GridLayout>
+</StackLayout>

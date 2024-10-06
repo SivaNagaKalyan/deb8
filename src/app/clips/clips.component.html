@@ -1,0 +1,12 @@
+<ActionBar title="Clips"></ActionBar>
+<StackLayout>
+  <Button text="Record New Clip" (tap)="recordClip()" class="btn btn-primary"></Button>
+  <ListView [items]="clips">
+    <ng-template let-item="item">
+      <StackLayout>
+        <Label [text]="item.title" class="h2"></Label>
+        <Label [text]="'By: ' + item.author" class="body"></Label>
+      </StackLayout>
+    </ng-template>
+  </ListView>
+</StackLayout>

@@ -1,0 +1,39 @@
+<BottomNavigation>
+  <TabStrip>
+    <TabStripItem class="navigation__item">
+      <Label text="Live"></Label>
+    </TabStripItem>
+    <TabStripItem class="navigation__item">
+      <Label text="Explore"></Label>
+    </TabStripItem>
+    <TabStripItem class="navigation__item">
+      <Label text="Clips"></Label>
+    </TabStripItem>
+    <TabStripItem class="navigation__item">
+      <Label text="Notifications"></Label>
+    </TabStripItem>
+    <TabStripItem class="navigation__item">
+      <Label text="Profile"></Label>
+    </TabStripItem>
+  </TabStrip>
+
+  <TabContentItem>
+    <page-router-outlet name="liveTab"></page-router-outlet>
+  </TabContentItem>
+
+  <TabContentItem>
+    <page-router-outlet name="exploreTab"></page-router-outlet>
+  </TabContentItem>
+
+  <TabContentItem>
+    <page-router-outlet name="clipsTab"></page-router-outlet>
+  </TabContentItem>
+
+  <TabContentItem>
+    <page-router-outlet name="notificationsTab"></page-router-outlet>
+  </TabContentItem>
+
+  <TabContentItem>
+    <page-router-outlet name="profileTab"></page-router-outlet>
+  </TabContentItem>
+</BottomNavigation>

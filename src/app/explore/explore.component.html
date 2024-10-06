@@ -1,0 +1,12 @@
+<ActionBar title="Explore"></ActionBar>
+<StackLayout>
+  <Label text="Trending Hashtags" class="h2"></Label>
+  <ListView [items]="trendingHashtags">
+    <ng-template let-item="item">
+      <GridLayout columns="*, auto">
+        <Label [text]="item" col="0"></Label>
+        <Button text="Raise" (tap)="raiseHashtag(item)" col="1" class="btn btn-primary"></Button>
+      </GridLayout>
+    </ng-template>
+  </ListView>
+</StackLayout>

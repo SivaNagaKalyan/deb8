@@ -1,0 +1,10 @@
+<ActionBar title="Live Debates"></ActionBar>
+<ListView [items]="lives">
+  <ng-template let-item="item">
+    <StackLayout>
+      <Label [text]="item.topic" class="h2"></Label>
+      <Label [text]="'Participants: ' + item.participants.join(', ')" class="body"></Label>
+      <Button text="Join Live" class="btn btn-primary"></Button>
+    </StackLayout>
+  </ng-template>
+</ListView>

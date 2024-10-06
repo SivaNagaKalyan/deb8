@@ -1,0 +1,9 @@
+<ActionBar title="Notifications"></ActionBar>
+<ListView [items]="notifications">
+  <ng-template let-item="item">
+    <StackLayout>
+      <Label [text]="item.message" class="body"></Label>
+      <Label [text]="item.time" class="footnote"></Label>
+    </StackLayout>
+  </ng-template>
+</ListView>
